@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Titillium Web";
+  src: url("fonts/Titillium Web/TitilliumWeb-Regular.ttf");
+}
+h1, p, h2, a {
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+header {
+  padding-bottom: 2%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 74vh;
+  margin: 0% auto 0% auto;
+  background-color: rgba(57, 54, 54, 0.428);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.897);
+  overflow-y: hidden;
+  justify-content: center;
+}
+main h1 {
+  text-align: center;
+  margin: 0%;
+  font-size: 2.5vw;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+}
+main form div {
+  margin: 1%;
+}
+main form .form-group {
+  display: flex;
+  align-items: center;
+}
+main form label {
+  flex: 2;
+  font-weight: bold;
+  font-size: 2vw;
+}
+main form input[type=text],
+main form input[type=tel],
+main form input[type=email],
+main form select {
+  flex: 3;
+  width: 60%;
+  padding: 1vh;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+main form textarea {
+  width: 60%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+main form button[type=submit] {
+  border-radius: 10px;
+  width: 40%;
+  padding: 0;
+  margin: 1% auto 0 auto;
+  background-color: rgba(80, 157, 83, 0.7333333333);
+  color: #fff;
+  border: none;
+  font-size: 2.3vw;
+}
+main form button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 750px) {
+  main {
+    width: 90%;
+  }
+  main form label {
+    font-size: 3vw;
+  }
+}

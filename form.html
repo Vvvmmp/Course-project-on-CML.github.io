@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet" media="all">
+    <link href="formpage.css" rel="stylesheet" media="all">
+    <title>Form</title>
+</head>
+<body>
+    <div class="darkbackground">
+      <header>
+        <div class="group1">
+          <img src="images/logobest (1).svg">
+          <p>Miracle</p>
+        </div>
+        <div class="group2">
+          <input type="checkbox" id="burgerCheckbox" class="burger-checkbox">
+          <label for="burgerCheckbox" class="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </label>
+          <ul>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="authors.html">Authors</a></li>
+          </ul>
+        </div>
+        <div class="group3">
+          <input type="text" id="searchInput" placeholder="Search" autocomplete="off">
+        </div>
+      </header>
+
+<main>
+            <h1>Оформление заказа</h1>
+            <form action="submit_order.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Ваш телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваша почта:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Ваш адресс:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="delivery">Способ доставки:</label>
+                    <select id="delivery" name="delivery">
+                        <option value="pickup">Самовывоз</option>
+                        <option value="courier">Курьер по минску</option>
+                        <option value="mail">Почтой</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="promo">Промокод:</label>
+                    <input type="text" id="promo" name="promo">
+                </div>
+                <div class="form-group">
+                    <label for="payment">Способ оплаты:</label>
+                    <input type="radio" id="cash" name="payment" value="cash" required>
+                    <label for="cash">Наличными</label>
+                    <input type="radio" id="card" name="payment" value="card" required>
+                    <label for="card">Картой</label>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Комментарий к заказу:</label>
+                    <textarea id="comment" name="comment"></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </main>
+       
+        <footer>
+
+            <div class="group1">                             
+                <img src="images/logobest (1).svg">
+              <p>Miracle</p>  
+            </div>
+  
+            <div class="group2">
+              <a href="https://vk.com"><img src="images/Messengers/VK.png"></a>
+              <a href="https://instagram.com"><img src="images/Messengers/Instagram.png"></a>
+              <a href="https://telegram.org"><img src="images/Messengers/Telegram.png"></a>
+            </div>
+  
+            <div class="group3">
+              <p>Телефон: +37529 111 11 11</p>
+              <p>Email: example@gmail.com</p>
+              <p>Адрес: г.Минск, ул.Пушкина, д.44, 2 этаж</p>
+            </div>
+  
+          </footer>
+    </div>
+    <script src="burgermenu.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

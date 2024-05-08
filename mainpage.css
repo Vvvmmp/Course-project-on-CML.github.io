@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Titillium Web";
+  src: url("fonts/Titillium Web/TitilliumWeb-Regular.ttf");
+}
+h1, p, h2, a {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.releases {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  font-size: 2.4vw;
+  color: rgba(208, 201, 201, 0.7411764706);
+  text-align: center;
+}
+
+.containSlider {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0%;
+  position: relative;
+  width: 90%;
+  height: 31vw;
+  overflow: hidden;
+  border-radius: 30px;
+  background: rgba(52, 52, 52, 0.81);
+}
+.containSlider p {
+  color: rgba(255, 255, 255, 0.67);
+  text-align: center;
+  font-size: 1.9vw;
+  margin: 1%;
+}
+.containSlider .slider {
+  margin-top: 2%;
+}
+.containSlider .slider .slick-prev,
+.containSlider .slider .slick-next {
+  position: absolute;
+  top: 41%;
+  background-color: transparent;
+  border: none;
+  width: 3vw;
+  font-size: 4vw;
+  text-align: center;
+  color: #0c0c0c;
+  cursor: pointer;
+  z-index: 1;
+}
+.containSlider .slider .slick-prev svg,
+.containSlider .slider .slick-next svg {
+  width: 50px;
+}
+.containSlider .slider .slick-next {
+  right: 5%;
+  transform: translate(50%, -50%);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.containSlider .slider .slick-prev {
+  left: 5%;
+  transform: translate(-50%, -50%);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.containSlider .slider div .book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.containSlider .slider div .book img {
+  width: 12vw;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 2%;
+}
+.containSlider .slider div .book .information {
+  font-size: 1.4vw;
+  text-align: center;
+}
+
+.bestsellers {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bestsellers h2 {
+  font-size: 2.2vw;
+  color: rgba(220, 220, 220, 0.8862745098);
+  text-align: left;
+  margin-left: 2%;
+}
+.bestsellers .bookshelf {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.bestsellers .bookshelf .shelf {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.bestsellers .bookshelf .shelf .book {
+  width: 23%;
+  height: auto;
+  margin-bottom: 2%;
+  display: flex;
+  text-decoration: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.bestsellers .bookshelf .shelf .book:hover {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+}
+.bestsellers .bookshelf .shelf .book img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px 0 0 10px;
+  margin-right: 5%;
+}
+.bestsellers .bookshelf .shelf .book .information {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 5%;
+}
+.bestsellers .bookshelf .shelf .book .information .nameAuthor {
+  text-align: center;
+  color: rgba(220, 220, 220, 0.8862745098);
+  font-size: 1.2vw;
+}
+.bestsellers .bookshelf .shelf .book .information .nameBook {
+  text-align: center;
+  color: rgba(220, 220, 220, 0.8862745098);
+  font-size: 1.7vw;
+}
+
+.reviewtext {
+  font-size: 2.6vw;
+  color: rgba(208, 201, 201, 0.7411764706);
+  text-align: left;
+  margin-left: 5%;
+  margin-bottom: 0%;
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: rgba(52, 52, 52, 0.81);
+}
+.reviews .review {
+  display: flex;
+  align-items: center;
+  width: 98%;
+  margin: 1%;
+}
+.reviews .review .review-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 1%;
+  border-radius: 10px;
+  text-align: center;
+}
+.reviews .review .review-item:hover {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+}
+.reviews .review .review-item .review-image {
+  width: 80%;
+  height: auto;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+.reviews .review .review-item .review-text-top {
+  font-size: 1.8vw;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgba(220, 220, 220, 0.8862745098);
+}
+.reviews .review .review-item .review-text-bottom {
+  font-size: 1.4vw;
+  color: rgba(208, 201, 201, 0.7411764706);
+}
+
+.mapInformation {
+  display: flex;
+  margin: 10% 5% 5% auto;
+  width: 60%;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  border-radius: 30px;
+  background: rgba(52, 52, 52, 0.81);
+}
+.mapInformation .information {
+  flex: 1;
+  padding: 2%;
+  color: rgba(220, 220, 220, 0.8862745098);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.mapInformation .information h2 {
+  font-size: 1.8vw;
+  margin-top: 20%;
+}
+.mapInformation .information p {
+  font-size: 2vw;
+}
+.mapInformation .map {
+  height: auto;
+  flex: 2.5;
+  background-color: #f2f2f2;
+  border-radius: 0px 30px 30px 0px;
+}
+
+@media (max-width: 750px) {
+  .mapInformation {
+    margin: 10% auto 5% auto;
+    width: 80%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .mapInformation .information p {
+    text-align: center;
+  }
+  .mapInformation .information h2 {
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 20%;
+  }
+}
+@media (max-width: 450px) {
+  .releases {
+    font-size: 5vw;
+    margin-bottom: 2%;
+  }
+  .containSlider {
+    width: 96%;
+    border-radius: 15px;
+  }
+  .containSlider p {
+    font-size: 2vw;
+  }
+  .containSlider .slider .slick-prev svg,
+  .containSlider .slider .slick-next svg {
+    width: 20px;
+  }
+  .bestsellers {
+    display: none;
+  }
+  .reviewtext {
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 10%;
+  }
+  .reviews .review {
+    flex-wrap: wrap;
+  }
+  .reviews .review .review-item {
+    width: 46%;
+    margin: 0%;
+  }
+  .reviews .review .review-item .review-image {
+    width: 90%;
+    border-radius: 10px;
+  }
+  .reviews .review .review-item .review-text-top {
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .reviews .review .review-item .review-text-bottom {
+    font-size: 2.5vw;
+  }
+  .mapInformation {
+    margin: 10% auto 5% auto;
+    width: 98%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .mapInformation .information {
+    flex: 1;
+    padding: 2%;
+  }
+  .mapInformation .information h2 {
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 20%;
+  }
+  .mapInformation .map {
+    flex: 2;
+    background-color: #f2f2f2;
+    border-radius: 0px 50px 50px 0px;
+  }
+}

@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Titillium Web";
+  src: url("fonts/Titillium Web/TitilliumWeb-Regular.ttf");
+}
+h1, p, h2, a {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.main {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  margin-bottom: 5%;
+}
+.main h2 {
+  padding: 2% 5% 1% 7%;
+  font-size: 3vw;
+}
+.main .authors {
+  padding-bottom: 1%;
+  padding-left: 2%;
+}
+.main .authors .author {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+.main .authors .author .author-name {
+  width: 96%;
+  font-size: 2vw;
+}
+.main .authors .author .arrow {
+  font-size: 2vw;
+  cursor: pointer;
+  order: -1;
+  color: rgb(255, 255, 255);
+}
+.main .authors .author .author-works {
+  display: none;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.main .authors .author .author-works .book {
+  margin-top: 2%;
+  margin-right: 2%;
+  width: 23%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 2%;
+  display: flex;
+  text-decoration: none;
+}
+.main .authors .author .author-works .book:hover {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+}
+.main .authors .author .author-works .book img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px 0 0 10px;
+  margin-right: 3%;
+}
+.main .authors .author .author-works .book .information {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3%;
+}
+.main .authors .author .author-works .book .information .nameBook {
+  text-align: center;
+  color: rgba(220, 220, 220, 0.8862745098);
+  font-size: 1.5vw;
+}
+.main .authors .author .author-works .book {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 750px) {
+  .main {
+    background: none;
+    margin-bottom: 5%;
+  }
+  .main h2 {
+    font-size: 5vw;
+  }
+  .main .authors {
+    padding-bottom: 1%;
+    padding-left: 2%;
+  }
+  .main .authors .author {
+    text-align: center;
+  }
+  .main .authors .author .author-name {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: 2%;
+    font-size: 4vw;
+  }
+  .main .authors .author .arrow {
+    margin-left: auto;
+    font-size: 5vw;
+    color: rgba(255, 255, 255, 0.661);
+  }
+  .main .authors .author .author-works {
+    flex-wrap: wrap;
+  }
+  .main .authors .author .author-works .book {
+    margin: 2%;
+    width: 46%;
+  }
+  .main .authors .author .author-works .book .information .nameBook {
+    font-size: 3.4vw;
+  }
+  .main .authors .author .author-works .book {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+}

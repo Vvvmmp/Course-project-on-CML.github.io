@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Titillium Web";
+  src: url("fonts/Titillium Web/TitilliumWeb-Regular.ttf");
+}
+h1, p, h2, a {
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  overflow-y: hidden;
+}
+body .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  height: 74vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+body .logo h1 {
+  font-size: 3vw;
+  margin: 0%;
+}
+body .logo img {
+  width: auto;
+  height: 50%;
+}
+body .logo p {
+  height: auto;
+  font-size: 3vw;
+  color: #9A8F7A;
+  margin: 0%;
+}

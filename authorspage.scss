@@ -1,0 +1,144 @@
+@import 'fonts&styles.scss';
+.main{
+    background-color: $backgroundBook;
+    border-radius: 50px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    h2{
+        padding: 2% 5% 1% 7%;
+        font-size: 3vw;
+    }
+    margin-bottom: 5%;
+.authors {
+    padding-bottom: 1%;
+    padding-left: 2%;
+    
+    
+    .author {
+
+        width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3%;
+  
+      .author-name {
+        width: 96%;
+        font-size: 2vw;
+      }
+  
+      .arrow {
+        font-size: 2vw;
+        cursor: pointer;
+        order: -1;
+        color: rgb(255, 255, 255);
+      }
+    
+  
+    .author-works {
+      display: none;
+        width: 100%;
+  height: fit-content;
+     
+        .book {
+            margin-top: 2%;
+            margin-right: 2%;
+          width: 23%;
+          height: fit-content;
+          margin-bottom: 2%;
+          display: flex;
+          text-decoration: none;
+  
+          &:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+          }
+  
+          img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px 0 0 10px;
+            margin-right: 3%;
+          }
+  
+          .information {
+            display: flex;
+            width: 60%;
+            justify-content: center; 
+            align-items: center; 
+            margin-right: 3%;
+            .nameBook {
+              text-align: center;
+              color: $whitecolor2;
+              font-size: 1.5vw;
+             
+            }
+          }
+  
+          & {
+            border-radius: 10px;
+            background: $backgroundBook;
+          }
+        }
+      }
+    }
+}
+
+
+}
+@media (max-width: 750px) {
+  .main{
+    background: none;
+    margin-bottom: 5%;
+    h2{
+      font-size: 5vw;
+  }
+.authors {
+    padding-bottom: 1%;
+    padding-left: 2%;
+    
+    
+    .author {
+      text-align: center; 
+      .author-name {
+        width: fit-content;
+        margin-right: auto;
+        margin-left: 2%;
+        font-size: 4vw;
+      }
+  
+      .arrow {
+        margin-left: auto;
+        font-size: 5vw;
+        color: rgba(255, 255, 255, 0.661);
+      }
+    
+  
+    .author-works {
+      flex-wrap: wrap;
+        .book {
+          margin: 2%;
+          width: 46%;
+  
+          .information {
+            .nameBook {
+
+              font-size: 3.4vw;
+             
+            }
+          }
+  
+          & {
+            border-radius: 10px;
+            background: $backgroundBook;
+          }
+        }
+      }
+    }
+}
+
+
+}
+}

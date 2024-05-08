@@ -1,0 +1,358 @@
+@import 'fonts&styles.scss';
+
+
+        .releases{
+        margin-top: 5%;
+        margin-bottom: 1%;
+        font-size: 2.4vw;
+        color: $whitecolor;
+        text-align: center;
+      }
+.containSlider{
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0%;
+  position: relative;
+  width: 90%;
+  height: 31vw; 
+  overflow: hidden;
+  border-radius: 30px;
+  background: $backgroundPhoto;
+  p {
+    color: rgba(255, 255, 255, 0.67);
+    text-align: center;
+    font-size: 1.9vw;
+    margin: 1%;
+  }
+      .slider {
+        margin-top: 2%;
+        .slick-prev,
+        .slick-next {
+          position: absolute;
+          top: 41%;
+          background-color: transparent; // Удаление фона
+          border: none; // Удаление границы
+          width: 3vw;
+          font-size: 4vw;
+          text-align: center;
+          color: #0c0c0c;
+             
+          cursor: pointer;
+          z-index: 1;
+          svg{
+            width: 50px;
+          }
+        }
+
+        .slick-next {
+          right: 5%;
+          transform: translate(50%, -50%);
+          width: fit-content;     
+        }
+        
+        .slick-prev {
+          left: 5%;
+          transform: translate(-50%, -50%);
+          width: fit-content;      
+        }
+      
+        
+        
+
+        
+      
+       
+      
+        
+        div{
+        .book {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-decoration: none;
+        
+          img {
+            width: 12vw;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 2%;
+          }
+        
+          .information {
+            font-size: 1.4vw;
+            text-align: center;
+          }
+        }
+      }
+      }
+      
+    }
+
+      .bestsellers {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        
+      
+        h2 {
+          font-size: 2.2vw;
+          color: $whitecolor2;
+          text-align: left;
+          margin-left: 2%;
+        }
+      
+        .bookshelf {
+          
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+      
+          .shelf {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 2%;
+      
+            .book {
+              width: 23%;
+              height: auto;
+              margin-bottom: 2%;
+              display: flex;
+              text-decoration: none;
+              
+              &:hover {
+                box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+              }
+      
+              img {
+                width: 40%; 
+                height: auto;
+                border-radius: 10px 0 0 10px;
+                margin-right: 5%;
+              }
+      
+              .information {
+                display: flex;
+                flex-direction: column;
+                width: 60%;  
+                margin-right: 5%;                
+      
+                .nameAuthor{
+                  text-align: center;
+                  color: $whitecolor2;
+                  font-size: 1.2vw;                  
+                }
+      
+                .nameBook {
+                  text-align: center;
+                  color: $whitecolor2;
+                  font-size: 1.7vw;
+                }
+              }
+              border-radius: 10px;
+              background: $backgroundBook;
+            }
+          }
+        }
+      }
+
+      .reviewtext {
+        font-size: 2.6vw;
+        color: $whitecolor;
+        text-align: left;
+        margin-left: 5%;
+        margin-bottom: 0%;
+      }
+
+      .reviews {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background: $backgroundPhoto;
+      
+        .review {
+          display: flex;
+          align-items: center;     
+          width: 98%;
+          margin: 1%;
+      
+          .review-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            padding: 1%;
+            border-radius: 10px;
+            text-align: center;
+            &:hover {
+              box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+            }
+            .review-image {
+              width: 80%;
+              height: auto;
+              margin-bottom: 5%;
+              border-radius: 10px;
+            }
+      
+            .review-text-top {
+              font-size: 1.8vw;
+              font-weight: bold;
+              margin-bottom: 10px;
+              color: $whitecolor2;
+            }
+      
+            .review-text-bottom {
+              font-size: 1.4vw;
+              color: $whitecolor;
+            }
+          }
+        }
+      }
+
+      .mapInformation {
+        display: flex;
+        margin: 10% 5% 5% auto ;
+        width: 60%;
+        height: fit-content;
+        overflow: hidden;
+        border-radius: 30px;
+        background: $backgroundPhoto;
+        
+      
+        .information {
+          flex: 1;
+          padding: 2%;
+          color: $whitecolor2;
+          height: fit-content;
+          h2 {
+            font-size: 1.8vw;
+            margin-top: 20%;
+          }
+          p{
+            font-size: 2vw;
+          }
+          
+        }
+      
+        .map {
+          height: auto;
+          flex: 2.5;         
+          background-color: #f2f2f2;
+          border-radius: 0px 30px 30px 0px;
+        }
+      }
+      @media (max-width:750px) {
+        .mapInformation{
+          margin: 10% auto 5% auto ;
+          width: 80%;
+          height: fit-content;
+          .information {
+            p{
+              text-align: center;
+            }
+        
+            h2 {
+              text-align: center;
+              font-size: 3vw;
+              margin-top: 20%;
+            }
+        }
+      }
+    }
+
+      @media (max-width:450px) {
+        .releases{
+          font-size: 5vw;
+          margin-bottom: 2%;
+        }
+        .containSlider{
+          width: 96%;
+          border-radius: 15px;
+          p {
+            font-size: 2vw;
+          }     
+          .slider {
+           
+            .slick-prev,
+            .slick-next {          
+              svg{
+                width: 20px;
+              }
+            }    
+        }
+      }
+        .bestsellers{
+          display: none;
+         }
+         .reviewtext {
+          font-size: 5vw;
+          text-align: center;
+          margin-top: 10%;
+        }
+        .reviews {
+          
+          .review {
+            flex-wrap: wrap;
+            .review-item {
+              width: 46%;
+              margin: 0%;
+              .review-image {
+                width: 90%;
+
+                
+                border-radius: 10px;
+              }
+        
+              .review-text-top {
+                font-size: 3vw;
+                font-weight: bold;
+                margin-bottom: 10px;
+              }
+        
+              .review-text-bottom {
+                font-size: 2.5vw;
+              }
+            }
+          }
+        }
+        .mapInformation{
+   
+          margin: 10% auto 5% auto ;
+          width: 98%;
+          height: fit-content;        
+
+          .information {
+
+            flex: 1;
+            padding: 2%;
+            
+        
+            h2 {
+              text-align: center;
+              font-size: 5vw;
+              margin-top: 20%;
+            }
+        
+            
+          }
+        
+          .map {
+            flex: 2;         
+            background-color: #f2f2f2;
+            border-radius: 0px 50px 50px 0px;
+          }
+        }
+
+  }

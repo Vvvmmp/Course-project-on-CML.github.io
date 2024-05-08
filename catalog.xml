@@ -1,0 +1,189 @@
+<xml>
+  
+<book>
+  <img>images/catalog/cover1.png</img>
+  <articul>0001</articul>
+  <name>1984</name>
+  <author>Джордж Оруэлл</author>
+  <price>19.99$</price>
+</book>
+  <book>
+    <img>images/catalog/cover2.png</img>
+    <articul>0002</articul>
+    <name>Посторонний</name>
+    <author>Стивен Кинг</author>
+    <price>24.99$</price>
+  </book>
+<book>
+  <img>images/catalog/cover3.png</img>
+  <articul>0003</articul>
+  <name>Чужак</name>
+  <author>Стивен Кинг</author>
+  <price>14.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover4.png</img>
+  <articul>0004</articul>
+  <name>Сияние</name>
+  <author>Стивен Кинг</author>
+  <price>29.99$</price>
+</book>
+
+
+
+<book>
+  <img>images/catalog/cover5.jpg</img>
+  <articul>0005</articul>
+  <name>451 градус по фаренгейту</name>
+  <author>Рэй Бредбери</author>
+  <price>17.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover6.jpg</img>
+  <articul>0006</articul>
+  <name>Преступление и наказание</name>
+  <author>Фёдор Достоевский</author>
+  <price>21.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover7.jpg</img>
+  <articul>0007</articul>
+  <name>Скотный двор</name>
+  <author>Джордж Оруэлл</author>
+  <price>18.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover8.jpg</img>
+  <articul>0008</articul>
+  <name>О дивный новый мир</name>
+  <author>Олдос Хаксли</author>
+  <price>23.99$</price>
+</book>
+
+
+<book>
+  <img>images/catalog/cover9.jpg</img>
+  <articul>0009</articul>
+  <name>Великий Гэтсби</name>
+  <author>Фрэнсис Скотт</author>
+  <price>20.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover10.jpg</img>
+  <articul>0010</articul>
+  <name>Маленький принц</name>
+  <author>Антуан де Сент-Экзюпери</author>
+  <price>15.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover11.jpg</img>
+  <articul>0011</articul>
+  <name>Алхимик</name>
+  <author>Пауло Коэльо</author>
+  <price>16.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover12.jpg</img>
+  <articul>0012</articul>
+  <name>Имя ветра</name>
+  <author>Патрик Ротфусс</author>
+  <price>26.99$</price>
+</book>
+
+
+
+
+
+
+
+
+<book>
+  <img>images/catalog/cover13.jpg</img>
+  <articul>0013</articul>
+  <name>Мастер и Маргарита</name>
+  <author>Михаил Булгаков</author>
+  <price>19.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover14.jpg</img>
+  <articul>0014</articul>
+  <name>Война и мир</name>
+  <author>Лев Толстой</author>
+  <price>24.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover15.jpg</img>
+  <articul>0015</articul>
+  <name>Анна Каренина</name>
+  <author>Лев Толстой</author>
+  <price>14.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover16.jpg</img>
+  <articul>0016</articul>
+  <name>Мёртвые души</name>
+  <author>Николай Гоголь</author>
+  <price>29.99$</price>
+</book>
+
+
+<book>
+  <img>images/catalog/cover17.jpg</img>
+  <articul>0017</articul>
+  <name>Доктор Живаго</name>
+  <author>Борис Пастернак</author>
+  <price>17.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover18.jpg</img>
+  <articul>0018</articul>
+  <name>Отцы и дети</name>
+  <author>Иван Тургенев</author>
+  <price>21.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover19.jpg</img>
+  <articul>0019</articul>
+  <name>Евгений Онегин</name>
+  <author>Александр Пушкин</author>
+  <price>18.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover20.jpg</img>
+  <articul>0020</articul>
+  <name>Тихий Дон</name>
+  <author>Михаил Шолохов</author>
+  <price>23.99$</price>
+</book>
+
+
+<book>
+  <img>images/catalog/cover21.jpg</img>
+  <articul>0021</articul>
+  <name>Алмазная колесница</name>
+  <author>Борис Акунин</author>
+  <price>20.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover22.jpg</img>
+  <articul>0022</articul>
+  <name>Заводной апельсин</name>
+  <author>Энтони Бёрджесс</author>
+  <price>15.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover23.jpg</img>
+  <articul>0023</articul>
+  <name>Дюна</name>
+  <author>Фрэнк Герберт</author>
+  <price>16.99$</price>
+</book>
+<book>
+  <img>images/catalog/cover24.jpg</img>
+  <articul>0024</articul>
+  <name>Ведьмак</name>
+  <author>Анджей Сапковский</author>
+  <price>26.99$</price>
+</book>
+
+</xml>

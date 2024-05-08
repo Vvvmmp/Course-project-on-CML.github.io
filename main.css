@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Titillium Web";
+  src: url("fonts/Titillium Web/TitilliumWeb-Regular.ttf");
+}
+h1, p, h2, a {
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: url(images/hinh-nen-ke-sach-full-hd-dep_022010570.jpg);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+body .darkbackground {
+  margin-top: -1%;
+  margin-bottom: -1%;
+  width: 96%;
+  background: rgba(0, 0, 0, 0.74);
+}
+body .darkbackground header {
+  padding-top: 4%;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex;
+  height: 7vh;
+  align-items: center;
+}
+body .darkbackground header .group1 {
+  margin-right: 10%;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: rgba(46, 42, 42, 0.5);
+  width: 17%;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #9A8F7A;
+}
+body .darkbackground header .group1 img {
+  width: 40%;
+  height: auto;
+}
+body .darkbackground header .group1 p {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.8vw;
+}
+body .darkbackground header .group2 {
+  list-style: none;
+  display: flex;
+  width: 60%;
+  align-items: center;
+}
+body .darkbackground header .group2 ul {
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .darkbackground header .group2 ul li {
+  align-items: center;
+  display: flex;
+}
+body .darkbackground header .group2 ul li a {
+  padding: 5%;
+  text-decoration: none;
+  color: rgba(208, 201, 201, 0.7411764706);
+  font-size: 2.5vw;
+}
+body .darkbackground header .group2 ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+body .darkbackground header .group3 {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 20%;
+  justify-content: center;
+  border-radius: 15px;
+  background: rgba(46, 42, 42, 0.65);
+}
+body .darkbackground header .group3 input {
+  font-size: 2vw;
+  width: 100%;
+  border-radius: 30px;
+  text-align: center;
+  background-color: transparent;
+  color: rgba(220, 220, 220, 0.8862745098);
+  border: none;
+}
+body .darkbackground header .group3 input:focus {
+  outline: none;
+}
+body .darkbackground header .burger-checkbox {
+  display: none;
+}
+body .darkbackground header .burger-menu {
+  display: none;
+}
+body .darkbackground header .burger-checkbox:checked + .burger-menu .bar:first-child {
+  transform: rotate(45deg);
+  position: relative;
+  top: 4px;
+}
+body .darkbackground header .burger-checkbox:checked + .burger-menu .bar:nth-child(2) {
+  opacity: 0;
+}
+body .darkbackground header .burger-checkbox:checked + .burger-menu .bar:last-child {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -4px;
+}
+@media (max-width: 450px) {
+  body .darkbackground header .burger-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0%;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(56, 58, 58, 0.763);
+    border-radius: 5px;
+    z-index: 9999;
+    margin-right: 10%;
+    right: 0%;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+  }
+  body .darkbackground header .burger-menu .bar {
+    display: block;
+    width: 15px;
+    height: 2px;
+    border-radius: 5px;
+    margin: 1px;
+    background-color: rgba(171, 171, 171, 0.78);
+    transition: transform 0.3s ease;
+  }
+  body .darkbackground header .group2 {
+    order: 2;
+  }
+  body .darkbackground header .group2 ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    margin-top: 0%;
+    padding: 20px;
+    background-color: rgba(8, 8, 8, 0.8588235294);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9998;
+    opacity: 0;
+  }
+  body .darkbackground header .group2 .show {
+    display: block;
+    opacity: 1;
+  }
+  body .darkbackground header .group2 li {
+    list-style: none;
+  }
+  body .darkbackground header .group2 a {
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    transition: color 0.3s ease;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  body .darkbackground header .group2 a:hover {
+    color: #9A8F7A;
+  }
+  body .darkbackground header .group3 {
+    margin-left: 8%;
+    width: 35%;
+    height: 20px;
+    order: 1;
+  }
+  body .darkbackground header .group1 {
+    width: 25%;
+    border-radius: 12px;
+  }
+  body .darkbackground header .group1 p {
+    font-size: 2.5vw;
+  }
+  body .darkbackground header .group2 ul li:first-child {
+    margin-top: 50%;
+  }
+}
+body .darkbackground footer {
+  height: 10vh;
+  padding: 1% 1% 1% 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .darkbackground footer .group1 {
+  margin-right: 10%;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: rgba(46, 42, 42, 0.5);
+  width: 17%;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #9A8F7A;
+}
+body .darkbackground footer .group1 img {
+  width: 40%;
+  height: auto;
+}
+body .darkbackground footer .group1 p {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.8vw;
+}
+body .darkbackground footer .group2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+body .darkbackground footer .group2 a {
+  width: 80%;
+}
+body .darkbackground footer .group2 a img {
+  width: 40%;
+  height: auto;
+}
+body .darkbackground footer .group3 {
+  color: rgba(220, 220, 220, 0.8862745098);
+  width: 30%;
+  font-size: 1.2vw;
+}
+body .darkbackground footer .group3 p {
+  margin: 2%;
+}
+@media (max-width: 450px) {
+  body .darkbackground footer .group2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+  }
+  body .darkbackground footer .group2 a img {
+    width: 60%;
+    height: auto;
+  }
+}

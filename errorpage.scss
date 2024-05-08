@@ -1,0 +1,38 @@
+@import 'fonts&styles.scss';
+
+body{
+    height: 100vh;
+    display: flex;
+    height: fit-content;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    overflow-y: hidden;
+        .logo{
+            display: flex;
+           flex-direction: column;
+           justify-content: center;
+        width: auto;
+        height: 74vh;
+        margin-right: auto;
+        margin-left: auto;
+        h1{
+            font-size: 3vw;
+          
+            margin: 0%;
+        }
+        img{
+            width:auto; 
+            height: 50%; 
+        }
+        p{
+            height: auto;
+            font-size: 3vw;
+            color: #9A8F7A;
+            
+            margin: 0%;
+        }
+    }
+
+    
+ 
+}
