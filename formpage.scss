@@ -3,25 +3,25 @@ body{
   overflow-y: hidden;
 }
 header{
-  padding-bottom: 2%;
+  margin-bottom: 3vh;
 }
 main {
   display: flex;
   flex-direction: column;
-   width: 75%;
-    height: 74vh;
+   width: 60%;
+    height: 70vh;
     margin: 0% auto 0% auto;
     background-color: rgba(57, 54, 54, 0.428);
     border-radius: 10px;
     color: rgba(255, 255, 255, 0.897);
-    overflow-y: hidden;
-    justify-content: center;
 
+    justify-content: center;
     h1 {
       text-align: center;
       margin: 0%;
-      font-size: 2.5vw;
+      font-size: 2.1vw;
     }
+   
   
     form {
       display: flex;
@@ -39,7 +39,7 @@ main {
       label {
         flex: 2;
         font-weight: bold;
-        font-size: 2vw;
+        font-size: 1.6vw;
       }
   
       input[type="text"],
@@ -48,11 +48,13 @@ main {
       select {
         flex: 3;
         width: 60%;
-        padding: 1vh;
+        padding: 0.8vh;
         border: 1px solid #ccc;
         border-radius: 4px;
       }
-  
+      input[type="radio"]{
+        margin-left: 23%;
+      }
       textarea {
         width: 60%;
         height: 100%;
@@ -65,11 +67,11 @@ main {
         border-radius: 10px;
        width: 40%;
        padding: 0;
-       margin: 1% auto 0 auto;
+       margin: 1% auto 1% auto;
         background-color: #509d53bb;
         color: #fff;
         border: none;
-        font-size: 2.3vw;
+        font-size: 1.9vw;
 
   
         &:hover {
@@ -79,13 +81,38 @@ main {
     }
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 450px) {
     main {
         width: 90%;
-      form{
-        label{
-            font-size: 3vw;
+        height: 75vh;
+        h1 {
+          font-size: 5.5vw;
         }
+      form{
+        div{
+            margin: 5% ;
+        }
+      label {
+        font-weight: bold;
+        font-size: 4vw;
       }
+      input[type="radio"]{
+        margin-left: 10%;
+      }
+      textarea {
+        height: 90%;    
+      }
+  
+      button[type="submit"] {
+        border-radius: 15px;
+       width: 60%;
+       padding: 2%;
+       margin: 2% auto 2% auto;
+        font-size: 5vw;
+      }
+    }
+    }
+    footer{
+      margin-top: 7%;
     }
   }

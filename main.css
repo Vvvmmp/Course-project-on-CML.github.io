@@ -205,7 +205,8 @@ body .darkbackground header .burger-checkbox:checked + .burger-menu .bar:last-ch
 }
 body .darkbackground footer {
   height: 10vh;
-  padding: 1% 1% 1% 1%;
+  margin-bottom: 1%;
+  padding: 1%;
   display: flex;
   justify-content: space-between;
   align-items: center;
